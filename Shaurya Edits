@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shaurya Edits | Professional Video Editing</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(8,8,8,0.95);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00eaff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+/* HERO */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    background: radial-gradient(circle at center, #10252b, #080808 65%);
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #00eaff;
+}
+
+.hero p {
+    color: #bbb;
+    font-size: 19px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #00eaff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00eaff;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 7%;
+}
+
+.title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.title span {
+    color: #00eaff;
+}
+
+/* SERVICES */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00eaff;
+}
+
+.card .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    height: 220px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #111, #1d1d1d);
+    border: 1px solid #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project h3 {
+    color: #00eaff;
+}
+
+/* ABOUT */
+.about {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about p {
+    color: #bbb;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* PRICING */
+.pricing {
+    max-width: 500px;
+    margin: auto;
+    background: #111;
+    border: 1px solid #00eaff;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+}
+
+.pricing h3 {
+    font-size: 27px;
+    color: #00eaff;
+    margin-bottom: 15px;
+}
+
+.pricing p {
+    color: #bbb;
+    line-height: 1.7;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    background: #0d0d0d;
+}
+
+.contact p {
+    color: #bbb;
+    margin: 10px;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #050505;
+    color: #777;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">⚡ Shaurya Edits</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+    <div>
+
+        <h1>
+            Creative <span>Video Editing</span>
+        </h1>
+
+        <p>
+            Welcome to Shaurya Edits — creative and professional
+            video editing for YouTube, Shorts, Reels, Gaming,
+            Sports and more.
+        </p>
+
+        <a href="#contact" class="btn">
+            Get Your Video Edited
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+
+    <h2 class="title">
+        My <span>Services</span>
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🎬</div>
+            <h3>YouTube Editing</h3>
+            <p>
+                Clean cuts, transitions, effects,
+                captions and engaging edits.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <h3>Shorts & Reels</h3>
+            <p>
+                Fast-paced edits for Instagram Reels,
+                YouTube Shorts and social media.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎮</div>
+            <h3>Gaming Videos</h3>
+            <p>
+                Gaming highlights, effects,
+                sound effects and exciting moments.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏏</div>
+            <h3>Sports Edits</h3>
+            <p>
+                Cricket and sports highlights,
+                player edits and match videos.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+
+    <h2 class="title">
+        My <span>Work</span>
+    </h2>
+
+    <div class="portfolio">
+
+        <div class="project">
+            <h3>🎬 YouTube Project</h3>
+        </div>
+
+        <div class="project">
+            <h3>🔥 Shorts Project</h3>
+        </div>
+
+        <div class="project">
+            <h3>🏏 Cricket Edit</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section>
+
+    <h2 class="title">
+        About <span>Shaurya Edits</span>
+    </h2>
+
+    <div class="about">
+
+        <p>
+            Shaurya Edits is a creative video editing service
+            focused on making videos more engaging, clean and
+            exciting. From YouTube videos to Shorts, Reels,
+            gaming and sports edits, every project is edited
+            according to the client's requirements.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PRICING -->
+<section id="pricing">
+
+    <h2 class="title">
+        <span>Pricing</span>
+    </h2>
+
+    <div class="pricing">
+
+        <h3>Custom Pricing</h3>
+
+        <p>
+            Every video is different.
+            The price depends on the video length,
+            editing requirements, effects and complexity.
+        </p>
+
+        <p>
+            Contact me to discuss your project
+            and get a price.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="title">
+        Let's <span>Work Together</span>
+    </h2>
+
+    <p>
+        Have a video that needs editing?
+    </p>
+
+    <p>
+        Contact us for your video editing requirements.
+    </p>
+
+    <a href="tel:9942992787" class="btn">
+        📞 Contact for Editing
+    </a>
+
+    <br>
+
+    <a href="https://wa.me/919942992787"
+       class="btn whatsapp">
+        💬 WhatsApp Me
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    © 2026 Shaurya Edits. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
